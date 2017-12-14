@@ -1,0 +1,11 @@
+h1 {
+	font-family: 'Bungee Shade', cursive;
+}
+
+span {
+	font-family: 'Bungee Hairline', cursive;
+}
+
+.round {
+	border-radius: .25rem;
+}

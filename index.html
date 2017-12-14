@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Link to CSS Reset -->
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+	<!-- Boostrap Most Recent  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- Link to my CSS -->
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<!-- Always have a Favicon -->
+	<link rel="shortcut icon" href="Assets/images/diamondicon.ico" type="image/x-icon">
+	<!-- Link to google fonts used. -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Hairline" rel="stylesheet">
+
+	<title>Diamond Guessing Game</title>
+
+</head>
+<body class="bg-dark">
+	<div class="jumbotron jumbotron-fluid mb-0 text-center bg-dark text-white">
+		<div class="col">
+			<h1>Diamond Guessing Game</h1>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 bg-dark">
+				<div class="card">
+				  <div class="card-header text-center font-weight-bold">
+				    Random Number
+				  </div>
+				  <div class="card-body text-center">
+				  	<h3 id="random-number">--</h3>
+				  </div>
+				</div>
+				<br>
+				<br>
+				<div class="card">
+				  <div class="card-header text-center font-weight-bold">
+				    Player Wins
+				  </div>
+				  <div class="card-body text-center">
+				  	<h3 id="wins">--</h3>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center text-justify round bg-white">
+				<h5>At the beginning of each round you will be given a random number.</h5>
+				<h5>By clicking the Diamond Icons you will add to your total score.</h5>
+				<h5>You win the game by matching your score with the random number. If your score goes above the random number, you lose.</h5>
+				<h5>The value of each crystal will be hidden from you, and each crystal's value will be changed after every round.</h5>			
+				<img class="image-fluid img" id="0" value="" src="Assets/images/diamond1.png">
+				<img class="image-fluid img" id="1" value="" src="Assets/images/diamond2.png">
+				<img class="image-fluid img" id="2" value="" src="Assets/images/diamond3.png">
+				<img class="image-fluid img" id="3" value="" src="Assets/images/diamond4.png">
+			</div>
+			<div class="col-md-4 bg-dark">
+				<div class="card">
+				  <div class="card-header text-center font-weight-bold">
+				    Your Current Total
+				  </div>
+				  <div class="card-body text-center">
+				  	<h3 id="current-total">--</h3>
+				  </div>
+				</div>
+				<br>
+				<br>
+				<div class="card">
+				  <div class="card-header text-center font-weight-bold">
+				    Player Losses
+				  </div>
+				  <div class="card-body text-center">
+				  	<h3 id="losses">--</h3>
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<footer class="footer pt-3 bg-dark text-light">
+		<div class="container text-center font-weight-bold">
+			<span>&copy;Ben Cross 2017</span>
+		</div>
+	</footer>
+
+	<!-- Link to JQuery Library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<!-- Link to JQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous">
+	</script>
+	<!-- Link to JavaScript -->
+	<script src="Assets/javascript/game.js"></script>
+</body>
+</html>

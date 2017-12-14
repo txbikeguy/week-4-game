@@ -21,6 +21,7 @@ $(document).ready(function() {
 		var randomNumber = Math.floor(Math.random() * 120) + 19;
 		$("#random-number").text(randomNumber);
 		console.log("Random Number: " + randomNumber);
+		$("#random-number").effect("shake", "slow"); 
 		$("#current-total").text(addition);
 
 	
@@ -30,16 +31,19 @@ $(document).ready(function() {
 			crystalValue = parseInt(crystalValue);
 			addition += crystalValue;
 			$("#current-total").text(addition);
+			$("#current-total").effect("shake", 125);
 
 			if (addition === randomNumber) {
 			wins++;
 			$("#wins").text(wins);
+			$("#wins").effect("shake", "slow");
 			alert("You got it!!");
 		}
 
 		else if (addition >= randomNumber) {
 			losses++;
 			$("#losses").text(losses)
+			$("#losses").effect("shake", "slow");
 			alert("You went over! Try again.");
 			gameStart();
 		}
